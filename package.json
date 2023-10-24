@@ -9,12 +9,23 @@
   "author": "korchel",
   "license": "ISC",
   "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.3",
     "pug-lint": "^2.7.0",
     "pug-lint-config-clock": "^2.0.0",
+    "sass": "^1.69.4",
     "stylelint": "^15.11.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.2.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
