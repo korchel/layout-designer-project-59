@@ -9,6 +9,7 @@
   "author": "korchel",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
@@ -23,6 +24,7 @@
     "stylelint-scss": "^5.2.1"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "pug": "^3.0.2",
