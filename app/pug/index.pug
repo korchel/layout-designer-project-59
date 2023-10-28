@@ -3,7 +3,13 @@ html
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet" href="./styles/app.css")
     title
   body
-    main
-      h1 YAY! 999
+    .container-xxxl.min-vh-100.border.border-gray.rounded
+      .row
+        .col-4.p-0
+          include header/header.pug
+          include aside/aside.pug
+        .col-8.border-start.border-gray
+          include main/main.pug

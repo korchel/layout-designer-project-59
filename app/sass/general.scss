@@ -1,0 +1,50 @@
+@use "sass:map";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* COLORS */
+
+$custom-theme-colors: (
+  "gray": #EFEFEF,
+  "primary": #4545A5,
+  "secondary": #6C757D,
+  "success": #28A745,
+  "danger": #DC3545,
+  "warning": #FFC107,
+  "info": #17A2B8,
+  "light": #FBFBFB,
+  "dark": #343A40,
+);
+
+$gray:      map.get($custom-theme-colors, "gray");
+$primary:   map.get($custom-theme-colors, "primary");
+$secondary: map.get($custom-theme-colors, "secondary");
+$success:   map.get($custom-theme-colors, "success");
+$danger:    map.get($custom-theme-colors, "danger");
+$warning:   map.get($custom-theme-colors, "warning");
+$info:      map.get($custom-theme-colors, "info");
+$light:     map.get($custom-theme-colors, "light");
+$dark:      map.get($custom-theme-colors, "dark");
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+/* BORDERS */
+
+$border-radius: 1rem;
+
+$enable-shadows: true;
+
+/* BREAKPOINTS */
+
+$grid-breakpoints: map-merge($grid-breakpoints, ("xxxl": 1600px));
+
+$container-max-widths: map-merge($container-max-widths, ("xxxl": 1540px));
