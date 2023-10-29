@@ -1,3 +1,6 @@
+include data/contacts.pug
+include aside/mixins/search.pug
+
 doctype html
 html
   head
@@ -5,11 +8,13 @@ html
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     link(rel="stylesheet" href="./styles/app.css")
     title
-  body
-    .container-xxxl.min-vh-100.border.border-gray.rounded
-      .row
-        .col-4.p-0
+  body.vh-100.bg-gray
+    .container-xxxl.h-100.border.border-gray.rounded.overflow-hidden.bg-white
+      .row.h-100
+        .col.col-md-7.col-lg-6.col-xl-5.col-xxl-4.p-0.h-100.d-flex.flex-column
           include header/header.pug
-          include aside/aside.pug
-        .col-8.border-start.border-gray
-          include main/main.pug
+          .tab-content.hide-scrollbar.h-100
+            section.pt-5.px-4#contacts
+              include aside/contacts.pug
+        main.col.d-flex.border-start.border-gray
+          include main/avatar.pug

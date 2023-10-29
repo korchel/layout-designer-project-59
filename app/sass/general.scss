@@ -48,3 +48,14 @@ $enable-shadows: true;
 $grid-breakpoints: map-merge($grid-breakpoints, ("xxxl": 1600px));
 
 $container-max-widths: map-merge($container-max-widths, ("xxxl": 1540px));
+
+/* BODY */
+$body-bg: $gray;
+
+.tab-content a:hover,
+.tab-content a:focus,
+.tab-content a:hover *,
+.tab-content a:focus * {
+  color: $light !important;
+  background-color: $primary;
+}
