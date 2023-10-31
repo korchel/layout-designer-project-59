@@ -1,2 +1,17 @@
-header.order-last.order-md-first
-    h3.bg-primary header
+header.order-last.order-md-first.bg-primary.d-flex.justify-content-between.p-3
+  a.logo.link-light(href="#")
+    img(src="images/icons/logo.svg" alt="Hexlet logo" width="25")
+  nav
+    ul.nav.nav-tabs.border-0(role="tablist")
+      li.nav-item
+        button.nav-link.link-light(type="button" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" role="tab")
+          img(src="images/icons/people.svg" alt="contacts" width="25")
+          span Контакты
+      li.nav-item
+        button.nav-link.link-light(type="button" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" role="tab")
+          img(src="images/icons/chat.svg" alt="chats" width="25")
+          span Сообщения
+      li.nav-item
+        button.nav-link.link-light(type="button" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab")
+          img(src="images/icons/person.svg" alt="profile" width="25")
+          span Профиль

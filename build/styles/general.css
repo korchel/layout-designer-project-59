@@ -1,0 +1,13 @@
+/* COLORS */
+/* BORDERS */
+/* BREAKPOINTS */
+/* BODY */
+.tab-content a:hover,
+.tab-content a:focus,
+.tab-content a:hover *,
+.tab-content a:focus * {
+  color: #FBFBFB !important;
+  background-color: #4545A5;
+}
+
+/* NAVS */

@@ -15,7 +15,7 @@ const browserSyncJob = () => {
 const buildSass = () => {
   console.log('Компиляция SASS');
 
-  return src('app/sass/app.scss')
+  return src('app/sass/**/*.scss')
     .pipe(sass())
     .pipe(dest('build/styles/'))
     .pipe(browserSync.stream());
@@ -30,8 +30,14 @@ const buildPug = () => {
     .pipe(browserSync.stream());
 };
 
+const copyBSJS = () => {
+  return src("node_modules/bootstrap/dist/js/bootstrap.min.js")
+    .pipe(dest("build/js/"));
+};
+
 const development = () => {
   console.log('development');
+  copyBSJS();
   buildPug();
   buildSass();
   browserSyncJob();
