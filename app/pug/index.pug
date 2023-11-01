@@ -1,4 +1,5 @@
 include data/contacts.pug
+include data/chats.pug
 include aside/mixins/search.pug
 
 doctype html
@@ -17,6 +18,7 @@ html
             section.tab-pane.active.pt-5.px-4#contacts(role="tabpanel" aria-labelledby="contacts-tab")
               include aside/contacts.pug
             section.tab-pane.pt-5.px-4#chats(role="tabpanel" aria-labelledby="chats-tab")
+              include aside/chats.pug
             section.tab-pane.pt-5.px-4#profile(role="tabpanel" aria-labelledby="profile-tab")
         main.col.d-flex.border-start.border-gray
           include main/avatar.pug
