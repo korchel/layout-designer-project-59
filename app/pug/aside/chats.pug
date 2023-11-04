@@ -3,6 +3,8 @@ h2.mb-4.fw-bold.text-900 Чаты
 each chat in chats
   a.d-flex.align-items-center.mb-3.text-decoration-none.text-dark.shadow-sm(href="#")
     img.ms-3.me-4.rounded-circle(src= chat.avatar width="50" height="50")
-    .py-4
-      p.fw-bold.mb-0 #{chat.name}
-      p.text-muted.small.mb-0 #{chat.lastMessage}
+    .py-4.pe-3.overflow-hidden
+      .d-flex.justify-content-between
+        p.fw-bold.mb-0 #{chat.name}
+        p.text-secondary #{chat.time}
+      p.text-muted.small.mb-0.text-truncate #{chat.lastMessage}
