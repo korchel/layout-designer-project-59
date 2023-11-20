@@ -12,6 +12,8 @@
 }
 
 /* NAVS */
+/* LIST-GROUP */
+/* $list-group-border-color: $theme-gray; */
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -5211,7 +5213,7 @@ textarea.form-control-lg {
 }
 
 .list-group {
-  --bs-list-group-color: var(--bs-body-color);
+  --bs-list-group-color: #6c757d;
   --bs-list-group-bg: var(--bs-body-bg);
   --bs-list-group-border-color: var(--bs-border-color);
   --bs-list-group-border-width: var(--bs-border-width);
@@ -12846,5 +12848,9 @@ textarea.form-control-lg {
 
 .logo {
   width: 25px;
-  height: 40px;
+}
+
+.header img {
+  height: 25px;
+  filter: invert(1);
 }
