@@ -2,9 +2,18 @@
 
 @import "./general.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./aside/contacts.scss";
-@import "./header.scss";
+
+/* CUSTOM UTILITIES */
+
 @import "./utilities/custom-radius";
 @import "./utilities/rounded";
 @import "./utilities/border";
+
+/* BS UTILITIES API */
+
 @import "../../node_modules/bootstrap/scss/utilities/api";
+
+/* CUSTOM STYLES */
+
+@import "./aside/contacts.scss";
+@import "./header.scss";
