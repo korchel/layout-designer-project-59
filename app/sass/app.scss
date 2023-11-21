@@ -4,8 +4,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./aside/contacts.scss";
 @import "./header.scss";
-@import "./utilities";
-@import "./rounded";
-@import "./border";
-
-
+@import "./utilities/custom-radius";
+@import "./utilities/rounded";
+@import "./utilities/border";
+@import "../../node_modules/bootstrap/scss/utilities/api";
