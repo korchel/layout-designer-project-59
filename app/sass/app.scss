@@ -1,5 +1,19 @@
 @use "sass:map";
 
+/* BS FUNCTIONS */
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+/* CUSTOM VARIABLES */
+
+@import "./variables.scss";
+
+/* BS VARIABLES */
+
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+
 @import "./general.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -15,5 +29,5 @@
 
 /* CUSTOM STYLES */
 
-@import "./aside/contacts.scss";
+@import "./contacts.scss";
 @import "./header.scss";
