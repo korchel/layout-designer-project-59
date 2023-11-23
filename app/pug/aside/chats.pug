@@ -1,7 +1,7 @@
 h2.mb-4.fw-bold.text-900 Чаты
 +search('Поиск по сообщениям')
 each chat in chats
-  a.d-flex.align-items-center.mb-3.text-decoration-none.text-dark.shadow-sm(href="#")
+  a.d-flex.align-items-center.mb-3.text-decoration-none.text-dark.shadow-sm(href=chat.link)
     img.ms-3.me-4.rounded-circle(src= chat.avatar width="50" height="50")
     .py-4.pe-3.overflow-hidden.w-100
       .d-flex.justify-content-between
