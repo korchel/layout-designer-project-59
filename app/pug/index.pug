@@ -3,13 +3,8 @@ include data/chats.pug
 include aside/mixins/search.pug
 
 doctype html
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css")
-    link(rel="stylesheet" href="./styles/app.css")
-    title
+html.h-100(lang="ru")
+  include includes/head.pug
   body.vh-100.bg-gray.p-md-4
     .container-xxxl.h-100.border.border-gray.overflow-hidden.bg-white.rounded-md-4
       .row.h-100

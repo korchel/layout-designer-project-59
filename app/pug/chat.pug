@@ -1,9 +1,23 @@
+include data/contacts.pug
+include data/chats.pug
+include data/messages.pug
+include aside/mixins/search.pug
+
 doctype html
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title
-  body
-    main
-      h1 YAY! chat
+html.h-100(lang="ru")
+  include includes/head.pug
+  body.vh-100.bg-gray.p-md-4
+    .container-xxxl.h-100.border.border-gray.overflow-hidden.bg-white.rounded-md-4
+      .row.h-100
+        .col.col-md-7.col-lg-6.col-xl-5.col-xxl-4.p-0.h-100.d-flex.flex-column
+          include header/header.pug
+          .tab-content.hide-scrollbar.h-100
+            section.tab-pane.pt-5.px-4#contacts(role="tabpanel" aria-labelledby="contacts-tab")
+              include aside/contacts.pug
+            section.tab-pane.pt-5.px-4#chats(role="tabpanel" aria-labelledby="chats-tab")
+              include aside/chats.pug
+            section.tab-pane.active.pt-5.px-4#profile(role="tabpanel" aria-labelledby="profile-tab")
+              include aside/profile.pug
+        main.col.d-flex.border-start.border-gray
+          div chats here
+  script(src="js/bootstrap.min.js")
