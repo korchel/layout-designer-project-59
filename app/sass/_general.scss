@@ -30,3 +30,21 @@ $nav-tabs-link-active-bg: trasparent;
 $list-group-color: $gray-600;
 
 $list-group-border-color: $gray;
+
+@mixin hide-scrollbar() {
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.hide-scrollbar {
+  @include hide-scrollbar;
+}
