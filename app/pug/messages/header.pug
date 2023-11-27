@@ -1,0 +1,8 @@
+-
+  const [user] = contacts['В'].filter((contact) => contact.name === "Вениамин Редакторович");
+
+header.d-flex.align-items-center.border-bottom.w-100(href="#")
+  img.ms-3.me-4.rounded-circle(src=user.avatar alt="avatar" width="50" height="50")
+  .py-4
+    p.fw-bold.mb-0 #{user.name}
+    p.text-muted.small.mb-0 Онлайн

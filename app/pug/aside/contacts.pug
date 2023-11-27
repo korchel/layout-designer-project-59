@@ -4,7 +4,7 @@ each users, letter in contacts
   p.text-muted.mt-5 #{letter}
   each user in users
     a.d-flex.align-items-center.mb-3.text-decoration-none.text-dark.shadow-sm(href="#")
-      img.ms-3.me-4.rounded-circle(src= user.avatar width="50" height="50")
+      img.ms-3.me-4.rounded-circle(src=user.avatar alt="avatar" width="50" height="50")
       .py-4
         p.fw-bold.mb-0 #{user.name}
         p.text-muted.small.mb-0 #{user.status}
