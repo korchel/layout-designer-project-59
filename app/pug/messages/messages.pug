@@ -1,0 +1,13 @@
+.d-flex.flex-column.gap-3
+    each message in messages
+        -
+            const bg = message.user ? "bg-light" : "bg-primary"
+            const color = message.user ? "text-secondary" : "text-light"
+            const position = message.user ? "align-self-start" : "align-self-end"
+        .d-flex(class=position)
+            img.d-block.rounded-circle.align-self-end(src=message.avatar alt="avatar" width="50" height="50")
+            div.p-4.rounded-4.shadow-sm(class=bg)
+                p.fw-bold #{message.user}
+                p(class=color) #{message.text}
+                p.border-top(class=color) #{message.time}
+
