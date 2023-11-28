@@ -17,16 +17,6 @@
 }
 
 /* LIST-GROUP */
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 /* BASIC BS FILES */
 :root,
 [data-bs-theme=light] {
@@ -10923,6 +10913,16 @@ textarea.form-control-lg {
   }
 }
 /* CUSTOM STYLES */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .logo {
   width: 25px;
 }

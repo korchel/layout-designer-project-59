@@ -15,7 +15,7 @@
 
 /* MODIFIED BS STYLES */
 
-@import "./general";
+@import "./setup";
 
 /* BASIC BS FILES */
 
@@ -47,4 +47,6 @@
 
 /* CUSTOM STYLES */
 
+@import "./mixins";
+@import "./general";
 @import "./header";
