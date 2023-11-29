@@ -18,8 +18,8 @@ html.h-100(lang="ru")
               include aside/chats.pug
             section.tab-pane.active.pt-5.px-4#profile(role="tabpanel" aria-labelledby="profile-tab")
               include aside/profile.pug
-        main.col.d-flex.flex-column.border-start.border-gray.h-100
-          include messages/header.pug
-          include messages/messages.pug
-          include messages/input.pug
+            section.tab-pane.active.pt-5.px-4.d-md-none.h-100#current-chat(role="tabpanel" aria-labelledby="profile-tab")
+              include messages/current-chat.pug
+        main.col.d-none.border-start.border-gray.h-100
+          include messages/current-chat.pug
   script(src="js/bootstrap.min.js")
