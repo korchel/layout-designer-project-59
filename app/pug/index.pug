@@ -2,6 +2,9 @@ include data/contacts.pug
 include data/chats.pug
 include aside/mixins/search.pug
 
+-
+  const currentPage = "index";
+
 doctype html
 html.h-100(lang="ru")
   include includes/head.pug
@@ -17,6 +20,6 @@ html.h-100(lang="ru")
               include aside/chats.pug
             section.tab-pane.pt-5.px-4#profile(role="tabpanel" aria-labelledby="profile-tab")
               include aside/profile.pug
-        main.col.d-flex.border-start.border-gray
+        main.col.d-none.d-flex.border-start.border-gray
           include main/avatar.pug
   script(src="js/bootstrap.min.js")
