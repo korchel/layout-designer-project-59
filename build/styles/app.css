@@ -10916,7 +10916,7 @@ textarea.form-control-lg {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .hide-scrollbar::-webkit-scrollbar {
