@@ -1,10 +1,11 @@
 h2.mb-4.fw-bold.text-900 Чаты
 +search('Поиск по сообщениям')
-each chat in chats
-  a.d-flex.align-items-center.mb-3.pe-4.text-decoration-none.text-dark.shadow-sm(href=chat.link)
-    img.ms-3.me-4.rounded-circle(src=chat.avatar alt="avatar" width="50" height="50")
-    .py-4.pe-3.overflow-hidden.w-100
-      .d-flex.justify-content-between
-        span.fw-bold #{chat.name}
-        span.text-secondary.small #{chat.time}
-      p.text-muted.small.mb-0.text-truncate #{chat.lastMessage}
+.mt-5
+  each chat in chats
+    a.d-flex.align-items-center.mb-3.pe-4.text-decoration-none.text-dark.shadow-sm(href=chat.link)
+      img.ms-3.me-4.rounded-circle(src=chat.avatar alt="avatar" width="50" height="50")
+      .py-4.pe-3.overflow-hidden.w-100
+        .d-flex.justify-content-between
+          span.fw-bold #{chat.name}
+          span.text-secondary.small #{chat.time}
+        p.text-muted.small.mb-0.text-truncate #{chat.lastMessage}
