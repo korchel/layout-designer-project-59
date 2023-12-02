@@ -5,17 +5,17 @@ header.header.order-last.order-md-first.bg-primary.d-flex.align-items-center.jus
     ul.nav.nav-tabs.border-0.flex-nowrap(role="tablist")
       if currentPage === "chat"
         li.nav-item.d-md-none
-          button.nav-link.link-light.d-flex.align-items-center(type="button" id="current-chat-tab" data-bs-toggle="tab" data-bs-target="#current-chat" role="tab")
+          a.nav-link.link-light.d-flex.align-items-center(href="#current-chat" id="current-chat-tab" data-bs-toggle="tab" data-bs-target="#current-chat" role="tab")
             img.me-2(src="images/icons/chat-left-text.svg" alt="dialog")
       li.nav-item
-        button.nav-link.link-light.d-flex.align-items-center(class={active: currentPage === "index"} type="button" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" role="tab")
+        a.nav-link.link-light.d-flex.align-items-center(class={active: currentPage === "index"} href="#contacts" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" role="tab")
           img.me-2(src="images/icons/people.svg" alt="contacts")
           span.d-none.d-md-inline.small Контакты
       li.nav-item
-        button.nav-link.link-light.d-flex.align-items-center(class={active: currentPage === "chat"} type="button" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" role="tab")
+        a.nav-link.link-light.d-flex.align-items-center(class={active: currentPage === "chat"} href="#chats" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" role="tab")
           img.me-2(src="images/icons/chat.svg" alt="chats")
           span.d-none.d-md-inline.small Сообщения
       li.nav-item
-        button.nav-link.link-light.d-flex.align-items-center(type="button" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab")
+        a.nav-link.link-light.d-flex.align-items-center(href="#profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab")
           img.me-2(src="images/icons/person.svg" alt="profile")
           span.d-none.d-md-inline.small Профиль
