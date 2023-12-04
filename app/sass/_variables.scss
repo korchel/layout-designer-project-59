@@ -9,3 +9,15 @@ $warning: #FFC107;
 $info: #17A2B8;
 $light: #fbfbfb;
 $dark: #343A40;
+
+$theme-colors: (
+  "gray":       $gray,
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

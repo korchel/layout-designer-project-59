@@ -1,7 +1,7 @@
 .d-flex.flex-column.gap-3.pt-5.px-5.hide-scrollbar
   each message in messages
     -
-      const bg = message.user ? "gray" : "bg-primary"
+      const bg = message.user ? "bg-gray" : "bg-primary"
       const color = message.user ? "text-secondary" : "text-light"
       const position = message.user ? "align-self-start" : "align-self-end"
     .d-flex.message(class=position)
@@ -11,4 +11,3 @@
           p.fw-bold.text-dark.mb-1 #{message.user}
         p.mb-2(class=color) #{message.text}
         p.border-top.small.mb-0.pt-1(class=color) #{message.time}
-
