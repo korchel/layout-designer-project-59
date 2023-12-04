@@ -1,5 +1,6 @@
 $utilities: map.merge(
-  $utilities, (
+  $utilities,
+  (
     "rounded": map.merge(
       map.get($utilities, "rounded"),
       ( responsive: true ),
