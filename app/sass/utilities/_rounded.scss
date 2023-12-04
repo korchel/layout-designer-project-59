@@ -1,23 +1,23 @@
-$utilities: map-merge(
+$utilities: map.merge(
   $utilities, (
-    "rounded": map-merge(
-      map-get($utilities, "rounded"),
+    "rounded": map.merge(
+      map.get($utilities, "rounded"),
       ( responsive: true ),
     ),
-    "rounded-top": map-merge(
-      map-get($utilities, "rounded-top"),
+    "rounded-top": map.merge(
+      map.get($utilities, "rounded-top"),
       ( responsive: true ),
     ),
-    "rounded-bottom": map-merge(
-      map-get($utilities, "rounded-bottom"),
+    "rounded-bottom": map.merge(
+      map.get($utilities, "rounded-bottom"),
       ( responsive: true ),
     ),
-    "rounded-start": map-merge(
-      map-get($utilities, "rounded-start"),
+    "rounded-start": map.merge(
+      map.get($utilities, "rounded-start"),
       ( responsive: true ),
     ),
-    "rounded-end": map-merge(
-      map-get($utilities, "rounded-end"),
+    "rounded-end": map.merge(
+      map.get($utilities, "rounded-end"),
       ( responsive: true ),
     ),
   )

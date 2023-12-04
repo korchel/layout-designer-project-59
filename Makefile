@@ -1,5 +1,5 @@
 lint:
-	npx stylelint ./app/scss/**/*.scss
+	npx stylelint ./app/sass/**/*.scss
 
 deploy:
 	npx surge ./build/

@@ -22,11 +22,11 @@ html.h-100(lang="ru")
             section.tab-pane.pt-5.px-4#profile(role="tabpanel" aria-labelledby="profile-tab")
               include aside/profile.pug
             section.tab-pane.d-md-none#current-chat(role="tabpanel" aria-labelledby="current-chat-tab")
-              include messages/header.pug
-              include messages/dialog.pug
-              include messages/input.pug
+              include current-chat/header.pug
+              include current-chat/dialog.pug
+              include current-chat/input.pug
         main.d-none.d-md-flex.col.border-start.border-gray.h-100.p-0.flex-column
-          include messages/header.pug
-          include messages/dialog.pug
-          include messages/input.pug
+          include current-chat/header.pug
+          include current-chat/dialog.pug
+          include current-chat/input.pug
   script(src="js/bootstrap.min.js")
