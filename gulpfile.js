@@ -8,14 +8,14 @@ const browserSyncJob = () => {
     server: "build/"
   });
 
-  watch('app/sass/*.scss', buildSass);
+  watch('app/scss/*.scss', buildSass);
   watch('app/pug/**/*.pug', buildPug);
 };
 
 const buildSass = () => {
   console.log('Компиляция SASS');
 
-  return src('app/sass/**/*.scss')
+  return src('app/scss/**/*.scss')
     .pipe(sass())
     .pipe(dest('build/styles/'))
     .pipe(browserSync.stream());
