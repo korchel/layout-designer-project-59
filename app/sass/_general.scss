@@ -5,6 +5,11 @@
 .message-submit {
   width: 50px;
   height: 50px;
+
+  @include media-breakpoint-down(md) {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 @include media-breakpoint-up(md) {
