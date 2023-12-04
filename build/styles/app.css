@@ -10928,6 +10928,11 @@ textarea.form-control-lg {
   height: 50px;
 }
 
+@media (min-width: 768px) {
+  .message {
+    max-width: 75%;
+  }
+}
 .logo {
   width: 25px;
 }
