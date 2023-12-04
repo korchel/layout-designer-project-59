@@ -1,7 +1,7 @@
 {
   "name": "layout-designer-project-59",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/korchel/layout-designer-project-59/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/korchel/layout-designer-project-59/actions)",
+  "description": "layout-project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-config-twbs-bootstrap": "^12.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.2.1"
   },
