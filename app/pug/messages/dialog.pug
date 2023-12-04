@@ -7,7 +7,8 @@
     .d-flex.message(class=position)
       img.d-none.d-md-block.rounded-circle.align-self-end.me-3(src=message.avatar alt="avatar" width="50" height="50")
       .p-4.rounded-4.shadow-sm(class=bg)
-        p.fw-bold.mb-0 #{message.user}
+        if message.user
+          p.fw-bold.text-dark.mb-1 #{message.user}
         p.mb-2(class=color) #{message.text}
         p.border-top.small.mb-0.pt-1(class=color) #{message.time}
 
